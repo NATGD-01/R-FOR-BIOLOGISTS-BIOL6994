@@ -1,0 +1,62 @@
+---
+title: "Practica 1"
+author: "Natalia"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+---
+
+
+# Practica 1
+
+## Practica de headers 
+
+### Practica de titulos 
+
+#### Subtitulo
+
+This is the first line.<br>
+This is the second line.
+This is a new paragraph
+Hoy la clase sera de Rmarkdown y todas sus funciones. Me parece una herramienta muy util para hacer reportes reproducibles.  Pero sera cuestion de probarla 
+
+I am **very** excited about the __class__ tutorials.
+
+*italic* 
+***italic***
+
+___Natalia___
+
+## Shopping list
+- Fruits 
+  * Apples 
+  * Oranges 
+  * Grapes 
+
+- Dairy 
+   * Milk 
+   * Cheese
+   
+# Links
+ [GitHub](https://github.com/)
+ 
+ # Photo
+ ![](C:/Users/Naty/OneDrive - University of Puerto Rico/R FOR BIOLOGISTS/unnamed (2).jpg)
+
+ 
+# Table
+
+ 
+ | Name | Age | City        |
+ |------|---- |------------ |
+ | Alice| 30  | New York    |
+ | Bob  | 25  | Los Angeles |
+ 
+ # Chunks
+ ```{r}
+ mod <- lm(mpg ~ wt, data = mtcars)
+ summary(mod)
+ ```
+ 
