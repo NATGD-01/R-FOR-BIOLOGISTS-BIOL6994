@@ -29,9 +29,6 @@ potential association with viral infections, particularly EBV, SARS-CoV-2, and H
 
 Through the analysis and comparison of diverse **datasets**,  my objective is __to identify the genes with the most significant correlation __.
 
-*italic* 
-***italic***
-
 ___Natalia___
 
 ## Shopping list
@@ -44,10 +41,9 @@ ___Natalia___
    * Milk 
    * Cheese
    
-# Links
- [GitHub](https://github.com/)
+[GitHub](https://github.com/NATGD-01)
  
- # Photo
+# Photo
  ![](C:/Users/Naty/OneDrive - University of Puerto Rico/R FOR BIOLOGISTS/unnamed (2).jpg)
 
  
@@ -58,5 +54,9 @@ ___Natalia___
  |------|---- |------------ |
  | Alice| 30  | New York    |
  | Bob  | 25  | Los Angeles |
+ 
+
+## Rtutorials
+ 
  
  
