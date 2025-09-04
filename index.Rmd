@@ -1,28 +1,33 @@
 ---
-title: "Practica 1"
-author: "Natalia"
+title: "R FOR BIOLOGISTS"
+author: "Natalia Delgado Giraldo"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output:
   prettydoc::html_pretty:
     theme: cayman
     highlight: github
-date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 ---
 
 
-# Practica 1
 
-## Practica de headers 
+# Ms Student in Biology- University of Puerto Rico RUM
 
-### Practica de titulos 
+## Practica 1
 
-#### Subtitulo
+### RESEARCH:
 
-This is the first line.<br>
-This is the second line.
-This is a new paragraph
-Hoy la clase sera de Rmarkdown y todas sus funciones. Me parece una herramienta muy util para hacer reportes reproducibles.  Pero sera cuestion de probarla 
+#### Systemic lupus erythematosus (SLE) is a chronic autoimmune disease that affects multiple systems in the body and is characterized by a wide range of clinical manifestations and variable progression. Its etiology is still not fully understood, although it is recognized that the interaction between genetic, environmental, and hormonal factors plays a key role in its development
 
-I am **very** excited about the __class__ tutorials.
+SLE is more prevalent in women, particularly between the ages of 15 and 45, and
+the role of the X chromosome in the pathogenesis of the disease has attracted
+increasing interest.<br>
+Genetic factors play a significant role in the development of the disease, making their
+study essential for understanding its pathogenesis. My goal is to explore the
+relationship between genetic factors associated with the onset of lupus and their
+potential association with viral infections, particularly EBV, SARS-CoV-2, and HIV.
+
+
+Through the analysis and comparison of diverse **datasets**,  my objective is __to identify the genes with the most significant correlation __.
 
 *italic* 
 ***italic***
@@ -54,9 +59,4 @@ ___Natalia___
  | Alice| 30  | New York    |
  | Bob  | 25  | Los Angeles |
  
- # Chunks
- ```{r}
- mod <- lm(mpg ~ wt, data = mtcars)
- summary(mod)
- ```
  

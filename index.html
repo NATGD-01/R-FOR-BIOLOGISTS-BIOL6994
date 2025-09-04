@@ -10,10 +10,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="author" content="Natalia" />
+<meta name="author" content="Natalia Delgado Giraldo" />
 
 
-<title>Practica 1</title>
+<title>R FOR BIOLOGISTS</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -30,97 +30,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css" data-origin="pandoc">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-color: #aaaaaa;
-}
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } 
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.at { color: #7d9029; } 
-code span.bn { color: #40a070; } 
-code span.bu { color: #008000; } 
-code span.cf { color: #007020; font-weight: bold; } 
-code span.ch { color: #4070a0; } 
-code span.cn { color: #880000; } 
-code span.co { color: #60a0b0; font-style: italic; } 
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.do { color: #ba2121; font-style: italic; } 
-code span.dt { color: #902000; } 
-code span.dv { color: #40a070; } 
-code span.er { color: #ff0000; font-weight: bold; } 
-code span.ex { } 
-code span.fl { color: #40a070; } 
-code span.fu { color: #06287e; } 
-code span.im { color: #008000; font-weight: bold; } 
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
-code span.kw { color: #007020; font-weight: bold; } 
-code span.op { color: #666666; } 
-code span.ot { color: #007020; } 
-code span.pp { color: #bc7a00; } 
-code span.sc { color: #4070a0; } 
-code span.ss { color: #bb6688; } 
-code span.st { color: #4070a0; } 
-code span.va { color: #19177c; } 
-code span.vs { color: #4070a0; } 
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
-
-a.sourceLine {
-pointer-events: auto;
-}
-</style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
-    }
-  }
-})();
-</script>
 
 
 
@@ -147,28 +56,38 @@ code span.ot { color: #007020; }
 
 
 <section class="page-header">
-<h1 class="title toc-ignore project-name">Practica 1</h1>
-<h4 class="author project-author">Natalia</h4>
-<h4 class="date project-date">2025-ago-28, 05:12 p. m.</h4>
+<h1 class="title toc-ignore project-name">R FOR BIOLOGISTS</h1>
+<h4 class="author project-author">Natalia Delgado Giraldo</h4>
+<h4 class="date project-date">2025-sept-04, 05:05 p. m.</h4>
 </section>
 
 
 
 <section class="main-content">
-<div id="practica-1" class="section level1">
-<h1>Practica 1</h1>
-<div id="practica-de-headers" class="section level2">
-<h2>Practica de headers</h2>
-<div id="practica-de-titulos" class="section level3">
-<h3>Practica de titulos</h3>
-<div id="subtitulo" class="section level4">
-<h4>Subtitulo</h4>
-<p>This is the first line.<br> This is the second line. This is a new
-paragraph Hoy la clase sera de Rmarkdown y todas sus funciones. Me
-parece una herramienta muy util para hacer reportes reproducibles. Pero
-sera cuestion de probarla</p>
-<p>I am <strong>very</strong> excited about the <strong>class</strong>
-tutorials.</p>
+<div id="ms-student-in-biology--university-of-puerto-rico-rum" class="section level1">
+<h1>Ms Student in Biology- University of Puerto Rico RUM</h1>
+<div id="practica-1" class="section level2">
+<h2>Practica 1</h2>
+<div id="research" class="section level3">
+<h3>RESEARCH:</h3>
+<div id="systemic-lupus-erythematosus-sle-is-a-chronic-autoimmune-disease-that-affects-multiple-systems-in-the-body-and-is-characterized-by-a-wide-range-of-clinical-manifestations-and-variable-progression.-its-etiology-is-still-not-fully-understood-although-it-is-recognized-that-the-interaction-between-genetic-environmental-and-hormonal-factors-plays-a-key-role-in-its-development" class="section level4">
+<h4>Systemic lupus erythematosus (SLE) is a chronic autoimmune disease
+that affects multiple systems in the body and is characterized by a wide
+range of clinical manifestations and variable progression. Its etiology
+is still not fully understood, although it is recognized that the
+interaction between genetic, environmental, and hormonal factors plays a
+key role in its development</h4>
+<p>SLE is more prevalent in women, particularly between the ages of 15
+and 45, and the role of the X chromosome in the pathogenesis of the
+disease has attracted increasing interest.<br> Genetic factors play a
+significant role in the development of the disease, making their study
+essential for understanding its pathogenesis. My goal is to explore the
+relationship between genetic factors associated with the onset of lupus
+and their potential association with viral infections, particularly EBV,
+SARS-CoV-2, and HIV.</p>
+<p>Through the analysis and comparison of diverse
+<strong>datasets</strong>, my objective is <strong>to identify the genes
+with the most significant correlation </strong>.</p>
 <p><em>italic</em> <strong><em>italic</em></strong></p>
 <p><strong><em>Natalia</em></strong></p>
 </div>
@@ -219,27 +138,6 @@ tutorials.</p>
 </tr>
 </tbody>
 </table>
-<p># Chunks</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars)</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">summary</span>(mod)</span></code></pre></div>
-<pre><code>## 
-## Call:
-## lm(formula = mpg ~ wt, data = mtcars)
-## 
-## Residuals:
-##     Min      1Q  Median      3Q     Max 
-## -4.5432 -2.3647 -0.1252  1.4096  6.8727 
-## 
-## Coefficients:
-##             Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
-## wt           -5.3445     0.5591  -9.559 1.29e-10 ***
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
-## 
-## Residual standard error: 3.046 on 30 degrees of freedom
-## Multiple R-squared:  0.7528,    Adjusted R-squared:  0.7446 
-## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
 </div>
 </section>
 
