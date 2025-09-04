@@ -1,7 +1,7 @@
 ---
 title: "R-Tutorial1"
 author: "Natalia Delgado Giraldo"
-date: "2025-09-04"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
 
