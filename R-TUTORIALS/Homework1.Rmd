@@ -19,4 +19,17 @@ Q3
 sqrt(81)
 
 ```
+Q4
+```{r}
+message <- "R is fun!"
+message
+```
+Q5
+```{r}
+a <- 10 
+b <- 5
+c <- a + b
+c
+
+```
 
