@@ -17,7 +17,6 @@ Q2
 Q3
 ```{r}
 sqrt(81)
-
 ```
 Q4
 ```{r}
@@ -47,6 +46,18 @@ log(-1)
 ```
 ```{r, warning=FALSE}
 log(-1)
+```
+Q9
+```{r}
+library(dplyr)
+```
+```{r, message=FALSE}
+library(dplyr)
+```
+
+Q10
+```{r}
+help(mean)
 ```
 
 
