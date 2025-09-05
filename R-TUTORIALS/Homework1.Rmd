@@ -30,7 +30,6 @@ a <- 10
 b <- 5
 c <- a + b
 c
-
 ```
 Q6
 ```{r}
@@ -40,4 +39,14 @@ Q7
 ```{r}
 class("Hello World")
 ```
+Q8
+```{r}
+log(-1)
+## Warning in log(-1): NaNs produced
+## [1] NaN
+```
+```{r, warning=FALSE}
+log(-1)
+```
+
 
