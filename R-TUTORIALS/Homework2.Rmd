@@ -1,0 +1,89 @@
+---
+title: "Homework2"
+author: "Natalia Delgado Giraldo"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+
+**Q1**
+
+BOD_df <- as.data.frame(BOD)# BOD (Biochemical Oxygen Demand) 
+
+BOD_df
+
+**Q2**
+
+df1=data.frame(
+  "Name"=c("a","b","c","d"),
+  "Age"=c(12,34,23,67),
+  "BMI"=c(22,12,10,11),
+  "Country"=c("Malaysia","India","Spain","England"))
+print(df1)
+ 
+ class(df1)
+
+ 
+**Q3**
+
+df=data.frame(
+  A=c("Raju","Kumar","Chandru","Deepak","Raina", "Dhoni", "Hema", "Vandana", "Bela","Anand" ),
+  B=c(12,34,23,67,23,43,23,38,34,12),
+  C=c("M","M","M","M","M","M","F","F","F","M"),
+  D=c("Malaysia","India","Spain","England", "Malaysia", "Malaysia", "India", "Egypt", "Italy", "Peru"))
+
+names(df)<-c("Name", "Age", "Gender","Country" )
+print(df)
+
+class(df)
+
+sub_df<- df[1:2, ]
+
+sub_df
+
+**Q4**
+
+subset<- df[ , 1:2]
+
+subset
+
+**Q5**
+
+df[order(df$Age), ]
+
+
+**Q6**
+
+df$Score<- c(85, 90, 78, 88, 90, 92, 80, 90, 87, 100)
+
+df
+
+**Q7**
+
+subset<- df[df$Age >30, ]
+
+subset
+
+
+**Q8**
+
+colnames(df) <- c("Person", "Years", "Index", "Nation")
+
+df
+
+
+**Q9** 
+df1
+
+subset_df <- subset(df1, Age > 20 & BMI < 15)
+
+subset_df
+
+
+**Q10**
+
+mean(df1$Age)
+
+
+
+
+ 
