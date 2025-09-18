@@ -11,6 +11,14 @@ BOD_df <- as.data.frame(BOD)# BOD (Biochemical Oxygen Demand)
 
 BOD_df
 
+      Time demand 
+    1    1    8.3 
+    2    2   10.3
+    3    3   19.0
+    4    4   16.0
+    5    5   15.6
+    6    7   19.8
+
 **Q2**
 
 df1=data.frame(
@@ -22,6 +30,11 @@ print(df1)
  
  class(df1)
 
+       Name Age BMI  Country
+     1    a  12  22 Malaysia
+     2    b  34  12    India
+     3    c  23  10    Spain
+     4    d  67  11  England
  
 **Q3**
 
@@ -34,11 +47,27 @@ df=data.frame(
 names(df)<-c("Name", "Age", "Gender","Country" )
 print(df)
 
+                Name Age Gender  Country
+          1     Raju  12      M Malaysia
+          2    Kumar  34      M    India
+          3  Chandru  23      M    Spain
+          4   Deepak  67      M  England
+          5    Raina  23      M Malaysia
+          6    Dhoni  43      M Malaysia
+          7     Hema  23      F    Indi
+          8  Vandana  38      F    Egypt
+          9     Bela  34      F    Italy
+          10   Anand  12      M     Peru
+
 class(df)
 
 sub_df<- df[1:2, ]
 
 sub_df
+
+        Name Age Gender  Country
+     1  Raju  12      M Malaysia
+     2 Kumar  34      M    India
 
 **Q4**
 
@@ -46,9 +75,33 @@ subset<- df[ , 1:2]
 
 subset
 
+             Name Ag
+       1     Raju  12
+       2    Kumar  34
+       3  Chandru  23
+       4   Deepak  67
+       5    Raina  23
+       6    Dhoni  43
+       7     Hema  23
+       8  Vandana  38
+       9     Bela  34
+       10   Anand  12
+
 **Q5**
 
 df[order(df$Age), ]
+
+             Name Age Gender  Country
+       1     Raju  12      M Malaysia
+       10   Anand  12      M     Peru
+       3  Chandru  23      M    Spain
+       5    Raina  23      M Malaysia
+       7     Hema  23      F    India
+       2    Kumar  34      M    India
+       9     Bela  34      F    Italy
+       8  Vandana  38      F    Egypt
+       6    Dhoni  43      M Malaysia
+       4   Deepak  67      M  England
 
 
 **Q6**
@@ -57,11 +110,30 @@ df$Score<- c(85, 90, 78, 88, 90, 92, 80, 90, 87, 100)
 
 df
 
+                Name Age Gender  Country Score
+          1     Raju  12      M Malaysia    85
+          2    Kumar  34      M    India    90
+          3  Chandru  23      M    Spain    78
+          4   Deepak  67      M  England    88
+          5    Raina  23      M Malaysia    90
+          6    Dhoni  43      M Malaysia    92
+          7     Hema  23      F    India    80
+          8  Vandana  38      F    Egypt    90
+          9     Bela  34      F    Italy    87
+          10   Anand  12      M     Peru   100
+
 **Q7**
 
 subset<- df[df$Age >30, ]
 
 subset
+
+             Name Age Gender  Country Score
+        2   Kumar  34      M    India    90
+        4  Deepak  67      M  England    88
+        6   Dhoni  43      M Malaysia    92
+        8 Vandana  38      F    Egypt    90
+        9    Bela  34      F    Italy    87
 
 
 **Q8**
@@ -70,6 +142,17 @@ colnames(df) <- c("Person", "Years", "Index", "Nation")
 
 df
 
+            Person Years Index   Nation  NA
+        1     Raju    12     M Malaysia  85
+        2    Kumar    34     M    India  90
+        3  Chandru    23     M    Spain  78
+        4   Deepak    67     M  England  88
+        5    Raina    23     M Malaysia  90
+        6    Dhoni    43     M Malaysia  92
+        7     Hema    23     F    India  80
+        8  Vandana    38     F    Egypt  90
+        9     Bela    34     F    Italy  87
+        10   Anand    12     M     Peru 100
 
 **Q9** 
 df1
@@ -77,6 +160,11 @@ df1
 subset_df <- subset(df1, Age > 20 & BMI < 15)
 
 subset_df
+
+        Name Age BMI Country
+      2    b  34  12   India
+      3    c  23  10   Spain
+      4    d  67  11 England
 
 
 **Q10**
