@@ -37,5 +37,21 @@ gapminder %>%
     1 Afghanistan Asia       1952    28.8 8425333      779.
     2 Rwanda      Africa     1992    23.6 7290203      737.
 
+**Q3**
+
+gapminder %>% 
+  filter(country == "Rwanda", year > 1979)
+
+       country continent  year lifeExp     pop gdpPercap
+       <fct>   <fct>     <int>   <dbl>   <int>     <dbl>
+     1 Rwanda  Africa     1982    46.2 5507565      882.
+     2 Rwanda  Africa     1987    44.0 6349365      848.
+     3 Rwanda  Africa     1992    23.6 7290203      737.
+     4 Rwanda  Africa     1997    36.1 7212583      590.
+     5 Rwanda  Africa     2002    43.4 7852401      786.
+     6 Rwanda  Africa     2007    46.2 8860588      863.
+
+
+
 
 
