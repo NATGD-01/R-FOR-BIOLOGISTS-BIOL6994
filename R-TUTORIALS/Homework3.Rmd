@@ -29,5 +29,13 @@ class(gapminder)
 
 **Q2**
 
+gapminder %>% 
+  filter(lifeExp < 29)
+  
+      country     continent  year lifeExp     pop gdpPercap
+      <fct>       <fct>     <int>   <dbl>   <int>     <dbl>
+    1 Afghanistan Asia       1952    28.8 8425333      779.
+    2 Rwanda      Africa     1992    23.6 7290203      737.
+
 
 
