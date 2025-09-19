@@ -125,6 +125,21 @@ gapminder %>%
     4  1967    45.4
     5  1972    40.3
     6  1977    31.2
+    
+**Q9**
+
+gapminder %>%
+filter(continent == "Africa")
+
+      country continent  year lifeExp      pop gdpPercap
+      <fct>   <fct>     <int>   <dbl>    <int>     <dbl>
+    1 Algeria Africa     1952    43.1  9279525     2449.
+    2 Algeria Africa     1957    45.7 10270856     3014.
+    3 Algeria Africa     1962    48.3 11000948     2551.
+    4 Algeria Africa     1967    51.4 12760499     3247.
+    5 Algeria Africa     1972    54.5 14760787     4183.
+    6 Algeria Africa     1977    58.0 17152804     4910.
+
 
 
 
