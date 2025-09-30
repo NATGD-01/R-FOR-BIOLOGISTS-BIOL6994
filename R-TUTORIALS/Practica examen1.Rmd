@@ -35,7 +35,7 @@ cereal[cereal$sugars > 10, "name"]
 **Q4**
 ```{r}
 
-mean(cereal$calories, na.rm = TRUE)
+mean(cereal$calories)
 
 ```
 
