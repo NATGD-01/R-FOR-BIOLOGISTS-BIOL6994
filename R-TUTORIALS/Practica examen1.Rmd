@@ -39,5 +39,11 @@ mean(cereal$calories, na.rm = TRUE)
 
 ```
 
+**Q5**
+```{r}
+
+sum(cereal$fiber >= 2)
+
+```
 
 
