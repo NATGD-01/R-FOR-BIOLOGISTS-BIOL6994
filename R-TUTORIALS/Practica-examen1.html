@@ -351,7 +351,7 @@ display: none;
 
 <h1 class="title toc-ignore">Practica examen 1</h1>
 <h4 class="author">Natalia Delgado Giraldo</h4>
-<h4 class="date">2025-sept-30, 04:23 p. m.</h4>
+<h4 class="date">2025-sept-30, 04:36 p. m.</h4>
 
 </div>
 
@@ -395,20 +395,18 @@ head(cereal)</code></pre>
 ##  8 Corn Flakes  K          1         101   0.1    202    24   0.8    3       2  
 ##  9 Corn Pops    K          1         117   0.2    120    28   0.3   15       1  
 ## 10 Crispix      K          1         113   0.3    229    26   0.1    3       2</code></pre>
-<pre class="r"><code>print(cereal[1:10, ])</code></pre>
-<pre><code>## # A tibble: 10 × 10
-##    name         company serving calories   fat sodium carbs fiber sugars protein
-##    &lt;chr&gt;        &lt;chr&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
-##  1 AppleJacks   K          1         117   0.6    143    27   0.5   15       1  
-##  2 Boo Berry    G          1         118   0.8    211    27   0.1   14       1  
-##  3 Cap&#39;n Crunch Q          0.75      144   2.1    269    31   1.1   16       1.3
-##  4 Cinnamon To… G          0.75      169   4.4    408    32   1.7   13.3     2.7
-##  5 Cocoa Blasts Q          1         130   1.2    135    29   0.8   16       1  
-##  6 Cocoa Puffs  G          1         117   1      171    26   0.8   14       1  
-##  7 Cookie Crisp G          1         117   0.9    178    26   0.5   13       1  
-##  8 Corn Flakes  K          1         101   0.1    202    24   0.8    3       2  
-##  9 Corn Pops    K          1         117   0.2    120    28   0.3   15       1  
-## 10 Crispix      K          1         113   0.3    229    26   0.1    3       2</code></pre>
+<p><strong>Q2</strong></p>
+<pre class="r"><code>Kelloggs &lt;- cereal[cereal$company == &quot;K&quot;,]
+head(Kelloggs)</code></pre>
+<pre><code>## # A tibble: 6 × 10
+##   name          company serving calories   fat sodium carbs fiber sugars protein
+##   &lt;chr&gt;         &lt;chr&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+## 1 AppleJacks    K             1      117   0.6    143    27   0.5     15       1
+## 2 Corn Flakes   K             1      101   0.1    202    24   0.8      3       2
+## 3 Corn Pops     K             1      117   0.2    120    28   0.3     15       1
+## 4 Crispix       K             1      113   0.3    229    26   0.1      3       2
+## 5 Froot Loops   K             1      118   0.9    150    26   0.8     12       2
+## 6 Frosted Mini… K             1      175   0.8      5    41   5       10       5</code></pre>
 
 
 

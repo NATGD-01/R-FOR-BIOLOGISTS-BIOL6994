@@ -18,7 +18,12 @@ head(cereal)
 **Q1**
 ```{r}
 cereal[1:10,]
-print(cereal[1:10, ])
+```
+
+**Q2**
+```{r}
+Kelloggs <- cereal[cereal$company == "K",]
+head(Kelloggs)
 ```
 
 
