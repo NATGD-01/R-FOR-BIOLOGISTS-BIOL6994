@@ -1,0 +1,26 @@
+---
+title: "Practica examen 1"
+author: "Natalia Delgado Giraldo"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+```{r}
+# install.packages("readxl")
+
+library(readxl)
+library(dplyr)
+```
+
+```{r}
+cereal <- read_excel("cereal.xlsx")
+head(cereal)
+```
+**Q1**
+```{r}
+cereal[1:10,]
+print(cereal[1:10, ])
+```
+
+
+
+
