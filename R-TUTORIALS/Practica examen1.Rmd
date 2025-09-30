@@ -26,6 +26,11 @@ Kelloggs <- cereal[cereal$company == "K",]
 head(Kelloggs)
 ```
 
+**Q3**
+```{r}
+cereal[cereal$sugars > 10, "name"] 
+```
+
 
 
 
