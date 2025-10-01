@@ -41,8 +41,7 @@ mean(cereal$calories)
 
 **Q5**
 ```{r}
-
-subset(cereal$fiber >= 2)
+subset(cereal, fiber >= 2)
 
 ```
 
