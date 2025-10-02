@@ -65,6 +65,16 @@ newEquationCitations %>%
   summarize(porcentaje =mean(equations))
 ```
 
+**Q2**
+```{r}
+newEquationCitations %>%
+  mutate(theo_ratio = theocites / cites) %>%
+  group_by(journal) %>%
+  summarize(calculopromedio =mean(theo_ratio))
+
+
+  
+```
 
 
 

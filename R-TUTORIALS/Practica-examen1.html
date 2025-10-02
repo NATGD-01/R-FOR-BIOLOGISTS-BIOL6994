@@ -351,7 +351,7 @@ display: none;
 
 <h1 class="title toc-ignore">Practica examen 1</h1>
 <h4 class="author">Natalia Delgado Giraldo</h4>
-<h4 class="date">2025-oct-02, 04:20 p. m.</h4>
+<h4 class="date">2025-oct-02, 04:36 p. m.</h4>
 
 </div>
 
@@ -473,6 +473,17 @@ head(newEquationCitations)</code></pre>
 ## 1 AmNat           9.04
 ## 2 Evolution       2.91
 ## 3 ProcB           2.69</code></pre>
+<p><strong>Q2</strong></p>
+<pre class="r"><code>newEquationCitations %&gt;%
+  mutate(theo_ratio = theocites / cites) %&gt;%
+  group_by(journal) %&gt;%
+  summarize(calculopromedio =mean(theo_ratio))</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##   journal   calculopromedio
+##   &lt;chr&gt;               &lt;dbl&gt;
+## 1 AmNat               0.253
+## 2 Evolution           0.138
+## 3 ProcB               0.176</code></pre>
 
 
 
