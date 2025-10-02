@@ -351,7 +351,7 @@ display: none;
 
 <h1 class="title toc-ignore">Practica examen 1</h1>
 <h4 class="author">Natalia Delgado Giraldo</h4>
-<h4 class="date">2025-sept-30, 08:17 p. m.</h4>
+<h4 class="date">2025-oct-02, 04:20 p. m.</h4>
 
 </div>
 
@@ -447,6 +447,32 @@ head(Kelloggs)</code></pre>
 ##  8 Smart Start  K          1         182   0.7    275    43   2.8   14       4  
 ##  9 Total        G          0.75      129   0.9    256    31   3.7    6.7     4  
 ## 10 Wheaties     G          1         107   1      218    24   3      4       3</code></pre>
+<p><strong>Practica examen 2</strong> 10-02-2025</p>
+<pre class="r"><code>library(readxl)
+library(dplyr)</code></pre>
+<pre class="r"><code>newEquationCitations &lt;- read_excel(&quot;newEquationCitations.xlsx&quot;)
+head(newEquationCitations)</code></pre>
+<pre><code>## # A tibble: 6 × 14
+##   rownames journal authors        volume startpage pages equations mainequations
+##      &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;           &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;         &lt;dbl&gt;
+## 1        1 AmNat   Prodohl et al.    151         7    13         0             0
+## 2        2 AmNat   Mauricio          151        20     9         2             2
+## 3        3 AmNat   Thrall et al.     151        29    17        15            15
+## 4        4 AmNat   Watson et al.     151        46    13         7             7
+## 5        5 AmNat   Klein &amp; Nelson    151        59     9         0             0
+## 6        6 AmNat   Blackburn &amp; G…    151        68    16         2             2
+## # ℹ 6 more variables: appequations &lt;dbl&gt;, cites &lt;dbl&gt;, selfcites &lt;dbl&gt;,
+## #   othercites &lt;dbl&gt;, theocites &lt;dbl&gt;, nontheocites &lt;dbl&gt;</code></pre>
+<p><strong>Q1</strong></p>
+<pre class="r"><code>newEquationCitations %&gt;%
+  group_by(journal)%&gt;%
+  summarize(porcentaje =mean(equations))</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##   journal   porcentaje
+##   &lt;chr&gt;          &lt;dbl&gt;
+## 1 AmNat           9.04
+## 2 Evolution       2.91
+## 3 ProcB           2.69</code></pre>
 
 
 

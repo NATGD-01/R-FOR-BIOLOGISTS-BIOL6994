@@ -45,4 +45,29 @@ subset(cereal, fiber >= 2)
 
 ```
 
+**Practica examen 2** 10-02-2025
+
+```{r}
+library(readxl)
+library(dplyr)
+```
+
+
+```{r}
+newEquationCitations <- read_excel("newEquationCitations.xlsx")
+head(newEquationCitations)
+```
+
+**Q1**
+```{r}
+newEquationCitations %>%
+  group_by(journal)%>%
+  summarize(porcentaje =mean(equations))
+```
+
+
+
+
+
+
 
