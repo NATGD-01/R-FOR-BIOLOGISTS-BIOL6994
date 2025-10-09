@@ -53,5 +53,15 @@ msleep
 ```
 
 
+**Q3**
+**Agrupa los datos por año y calcula el número de tormentas que ocurrieron cada año**
+```{r}
+
+storms_per_year <- storms %>%
+  group_by(year) %>%
+  summarise(num_storms = n())
+storms_per_year
+```
+
 
 

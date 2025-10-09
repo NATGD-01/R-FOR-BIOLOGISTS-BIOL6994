@@ -351,7 +351,7 @@ display: none;
 
 <h1 class="title toc-ignore">Midterm 1</h1>
 <h4 class="author">Natalia Delgado Giraldo</h4>
-<h4 class="date">2025-oct-09, 04:04 p. m.</h4>
+<h4 class="date">2025-oct-09, 04:16 p. m.</h4>
 
 </div>
 
@@ -494,6 +494,26 @@ msleep</code></pre>
 ## # ℹ 73 more rows
 ## # ℹ 4 more variables: sleep_cycle &lt;dbl&gt;, awake &lt;dbl&gt;, brainwt &lt;dbl&gt;,
 ## #   bodywt &lt;dbl&gt;</code></pre>
+<p><strong>Q3</strong> <strong>Agrupa los datos por año y calcula el
+número de tormentas que ocurrieron cada año</strong></p>
+<pre class="r"><code>storms_per_year &lt;- storms %&gt;%
+  group_by(year) %&gt;%
+  summarise(num_storms = n())
+storms_per_year</code></pre>
+<pre><code>## # A tibble: 48 × 2
+##     year num_storms
+##    &lt;dbl&gt;      &lt;int&gt;
+##  1  1975        238
+##  2  1976        126
+##  3  1977         92
+##  4  1978        152
+##  5  1979        324
+##  6  1980        335
+##  7  1981        311
+##  8  1982        111
+##  9  1983         88
+## 10  1984        342
+## # ℹ 38 more rows</code></pre>
 
 
 
