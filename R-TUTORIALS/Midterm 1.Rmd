@@ -74,6 +74,14 @@ strong_storms
 
 ```
 
+**Q5**
+**Determina cuál combinación de Sitio y Diámetro tiene el total de grahami más alto**
+```{r}
+lizards %>%
+  group_by(Site, Diameter) %>%                 
+  summarise(total_grahami = sum(grahami)) %>% 
+  arrange(desc(total_grahami)) 
+```
 
 
 
