@@ -1,0 +1,14 @@
+---
+title: "Midterm 1"
+author: "Natalia Delgado Giraldo"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+
+**Q1**
+
+```{r}
+
+```
+
+

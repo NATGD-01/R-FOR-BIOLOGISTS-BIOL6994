@@ -65,5 +65,6 @@ ___Natalia___
  
 [Practica examen 1](R-TUTORIALS/Practica-examen1.html) 
 
+[Midterm1](R-TUTORIALS/Midterm1.html) 
 
  
