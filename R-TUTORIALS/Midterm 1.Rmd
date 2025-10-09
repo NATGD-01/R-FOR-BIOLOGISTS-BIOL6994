@@ -16,11 +16,31 @@ storms <- storms
 lizards <-lizards
 ```
 
+```{r}
+head(msleep)
+head(storms)
+head(lizards)
+```
+
 
 **Q1**
+**Usa filter() para seleccionar del dataset msleep solo los animales que están despiertos al menos 12 horas al día**
 
 ```{r}
+library(dplyr)
+glimpse(msleep)
+
+msleep_awake12 <- msleep %>%
+  filter(awake >= 12)
+
+msleep_awake12
 
 ```
+
+
+**Q2** 
+**Usa mutate() para crear una nueva columna llamada percent_day_awake que muestre el porcentaje del día que cada especie permanece despierta. Usa select() con everything() al final para comprobar que tus cálculos son correctos**
+
+
 
 
