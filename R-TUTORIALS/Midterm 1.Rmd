@@ -4,6 +4,18 @@ author: "Natalia Delgado Giraldo"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
+```{r}
+library(aod)
+library(dplyr)
+library(tidyverse)
+```
+
+```{r}
+msleep <- glimpse(msleep)
+storms <- storms
+lizards <-lizards
+```
+
 
 **Q1**
 
