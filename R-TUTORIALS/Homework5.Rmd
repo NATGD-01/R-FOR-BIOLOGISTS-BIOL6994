@@ -1,0 +1,23 @@
+---
+title: "Homework5"
+author: "Natalia Delgado Giraldo"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+
+library(readr)
+library(ggplot2)
+install.packages("janitor")
+library(janitor)
+
+metabric <- read.csv("brca_metabric_clinical_data.csv") %>%
+  clean_names()
+head(metabric[, 1:5]) 
+
+ggplot(metabric, aes(x = type_of_breast_surgery,
+                     y = tumor_size)) +
+  geom_boxplot()
+  
+
+
+
