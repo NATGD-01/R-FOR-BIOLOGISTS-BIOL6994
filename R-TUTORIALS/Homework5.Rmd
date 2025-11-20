@@ -4,20 +4,93 @@ author: "Natalia Delgado Giraldo"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
-
+```{r}
 library(readr)
 library(ggplot2)
-install.packages("janitor")
+#install.packages("janitor")
 library(janitor)
+library(dplyr)
+```
 
+
+```{r}
 metabric <- read.csv("brca_metabric_clinical_data.csv") %>%
   clean_names()
 head(metabric[, 1:5]) 
 
+```
+```{r}
 ggplot(metabric, aes(x = type_of_breast_surgery,
                      y = tumor_size)) +
   geom_boxplot()
-  
+```
+
+**Modificacion1: Cambio de titulos; mejora la descripcion de cada eje y caracteriza un titulo global que me permite entender a los lectores a simple vista de que me estara hablando la grafica**
+```{r}
+ggplot(metabric, aes(
+  x = type_of_breast_surgery,
+  y = tumor_size
+)) +
+  geom_boxplot() +
+  labs(
+  x = "Tipo de cirugia mamaria",
+  y = "Tamano del tumor (mm)",
+  title = "Distribucion del tamano del tumor segun tipo de cirugia"
+)
+
+```
+
+
+**Modificacion2: Cambio de color; brinda mejor visualizacion y clasificacion, permite diferenciacion entre grupos y facilita la lectura si hay solapamiento** 
+```{r}
+ggplot(metabric, aes(
+  x = type_of_breast_surgery,
+  y = tumor_size
+)) +
+  geom_boxplot(aes(fill = type_of_breast_surgery)) +
+  scale_fill_brewer(palette = "Pastel1")
+
+```
+
+
+**Modificacion3: Ajuste de etiqueta,escala, leyenda o tamaño del texto; Permite ver separado los nombres asignados a cada conjunto de datos caracterizados en la grafica tambien, se logran aumentar en tamaño, en conclusion mejor visualizacion**  : 
+```{r}
+ggplot(metabric, aes(
+  x = type_of_breast_surgery,
+  y = tumor_size
+)) +
+  geom_boxplot() +
+theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
+    axis.text.y = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    plot.title = element_text(size = 16)
+)
+
+```
+
+
+```{r}
+ggplot(metabric, aes(
+  x = type_of_breast_surgery,
+  y = tumor_size,
+  fill = type_of_breast_surgery
+)) +
+  geom_boxplot() +
+  labs(
+    x = "Tipo de cirugia mamaria",
+    y = "Tamano del tumor (mm)",
+    title = "Distribucion del tamano del tumor segun tipo de cirugia"
+  ) +
+  scale_fill_brewer(palette = "Pastel1") +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1, size = 12),
+    axis.text.y = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    plot.title = element_text(size = 16)
+  )
+
+```
 
 
 
