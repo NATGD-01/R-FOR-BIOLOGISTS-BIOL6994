@@ -35,5 +35,13 @@ geom_point()
 
 **Q2**
 Partiendo del gráfico anterior y usando un código similar, modifica el gráfico de dispersión para colorear los puntos por species.
+```{r}
+ggplot(data = penguins,
+       aes(x = flipper_length_mm,
+           y = body_mass_g,
+           color = species)) +
+  geom_point()
+```
+
 
 
