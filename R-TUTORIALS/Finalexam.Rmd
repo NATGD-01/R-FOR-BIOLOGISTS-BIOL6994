@@ -67,3 +67,20 @@ ggplot(
 
 ```
 
+**Q5**
+Partiendo del gráfico que creaste en la Pregunta 1, modifícalo para que sea apto para publicación mejorando al menos tres aspectos.
+```{r}
+ggplot(data = penguins,
+       aes(x = flipper_length_mm,
+           y = body_mass_g)) +
+  geom_point(size = 2, alpha = 0.4) + 
+  labs(title = "Relationship between Flipper Length and Body Mass in dataset penguins",
+       x = "Flipper Length (mm)",
+       y = "Body Mass (g)") +
+  theme_bw() +
+  theme(axis.title = element_text(size = 20),
+        axis.text = element_text(size = 16),
+        legend.position = "bottom")
+
+```
+
