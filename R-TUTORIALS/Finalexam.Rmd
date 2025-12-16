@@ -1,0 +1,7 @@
+---
+title: "Finalexam"
+author: "Natalia Delgado Giraldo"
+date: "2025-12-16"
+output: html_document
+---
+
