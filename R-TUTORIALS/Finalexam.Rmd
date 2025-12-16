@@ -43,5 +43,16 @@ ggplot(data = penguins,
   geom_point()
 ```
 
+**Q3**
+Partiendo del gráfico anterior y usando un código similar, modifica el gráfico de dispersión para crear paneles separados por species.
+```{r}
+ggplot(data = penguins,
+       aes(x = flipper_length_mm,
+           y = body_mass_g)) +
+  geom_point() +
+  facet_wrap(~ species)
+```
 
+**Q4**
+Partiendo del gráfico anterior y usando un código similar, añade una línea de suavizado para cada especie.
 
