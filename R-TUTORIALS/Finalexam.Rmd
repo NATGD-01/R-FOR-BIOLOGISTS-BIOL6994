@@ -6,12 +6,34 @@ output: html_document
 ---
 
 ```{r}
-install.packages("palmerpenguins")
+install.packages("palmerpenguins", repos = "https://cloud.r-project.org")
+
+library(ggplot2)
 library(palmerpenguins)
 data(package = 'palmerpenguins')
-head(penguins_raw)
+head(penguins)
+```
+
+library(ggplot2)
+```{r}
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point()
 ```
 
 
+
+**Q1** 
+Crea un gráfico de dispersión usando geom_point() que muestre la relación entre bill_length_mm y bill_depth_mm usando el dataset penguins.
+```{r}
+ggplot(data = penguins, 
+    aes(
+      x = flipper_length_mm, 
+      y = body_mass_g 
+      )) + 
+geom_point()
+```
+
+**Q2**
+Partiendo del gráfico anterior y usando un código similar, modifica el gráfico de dispersión para colorear los puntos por species.
 
 
