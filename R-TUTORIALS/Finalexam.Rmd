@@ -5,3 +5,13 @@ date: "2025-12-16"
 output: html_document
 ---
 
+```{r}
+install.packages("palmerpenguins")
+library(palmerpenguins)
+data(package = 'palmerpenguins')
+head(penguins_raw)
+```
+
+
+
+
