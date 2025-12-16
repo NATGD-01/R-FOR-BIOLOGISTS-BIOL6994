@@ -55,4 +55,15 @@ ggplot(data = penguins,
 
 **Q4**
 Partiendo del gráfico anterior y usando un código similar, añade una línea de suavizado para cada especie.
+```{r}
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm,
+                y = body_mass_g,
+                color = species)
+) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+```
 
